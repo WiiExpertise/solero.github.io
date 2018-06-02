@@ -121,7 +121,7 @@ sudo mysql -u root -p Houdini < ~/houdini/houdini.sql
 Now we have to configure Houdini, for the purpose of this tutorial, you just need to edit one line, however Houdini actually has lots more configuration options which you may play around with.
 
 ```shell
-nano ~/houdini/houdini.conf
+nano ~/houdini/config.py
 ```
 
 This brings up a terminal text editor, you should see some lines, near the top, which look similar to this.
