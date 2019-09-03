@@ -179,8 +179,9 @@ See those orange clouds on the right? If those are grey you are not benefitting 
 {% endcapture %}
 {% include message.html type="info" content=message %}
 
-This is a breif overview of how to configure CloudFlare, however CloudFlare provides a [much more detailed setup guide here](https://support.cloudflare.com/hc/en-us/categories/200275218-Getting-Started){:target="_blank"}.
+This is a brief overview of how to configure CloudFlare, however CloudFlare provides a [much more detailed setup guide here](https://support.cloudflare.com/hc/en-us/categories/200275218-Getting-Started){:target="_blank"}.
 
+Do note that these subdomains will also have to be configured in nginx.
 ### Running Houdini
 
 First, navigate to the Houdini installation directory and check Houdini is actually installed correctly.
@@ -289,7 +290,7 @@ screen -S world python World.py
 #### Installing plugins
 There is currently no installer or central repository for Houdini plugins (although it has been planned).
 
-If you do have plugins which you wish to install, they can be installed simply by copying them to `~/houdini/Houdini/Plugins/`. Houdini can hot-load new plugins so a restart is not normally required.
+If you do have plugins which you wish to install, they can be installed simply by copying them to `~/houdini/Houdini/Plugins/`. Houdini can hot-load new plugins so a restart is not normally required, however, if you experience issues with your plugins after hot-reloading, try restarting Houdini.
 
 Example plugin directory structure:
 
